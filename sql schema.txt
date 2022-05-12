@@ -1,0 +1,44 @@
+SQL Schema
+
+
+create database drivingschool;
+use drivingschool;
+
+
+Tables created using Entity classes and  a code in application.properties
+
+spring.jpa.hibernate.ddl-auto=create
+
+after executing one time change this to
+
+spring.jpa.hibernate.ddl-auto=update
+
+Admin table
+
+insert into admin value(1,'admin@gmail.com','admin','admin@123');
+insert into admin value(2,'admin1@gmail.com','admin2','admin@123');
+select * from admin;
+
+Students Table
+
+insert into students values(2,23,'anwar@gmail.com','local','anwar','anwar@123',1);
+insert into students values(3,23,'aqeel@gmail.com','remote','aqeel','123',2);
+insert into students values(4,23,'farook@gmail.com','local','farook','123');
+insert into students values(5,23,'raja@gmail.com','remote','raja','123',3);
+insert into students values(6,23,'rafik@gmail.com','local','rafik','123',4);
+insert into students values(7,23,'ashik@gmail.com','remote','ashik','123',1);
+insert into students values(8,23,'arun@gmail.com','remote','arun','123',2);
+insert into students values(9,23,'pradeep@gmail.com','remote','pradeep','123',3);
+insert into students values(10,23,'jaffar@gmail.com','local','jaffar','123',5);
+select * from students;
+
+
+Package details table
+
+
+insert into package_details values(1,'deluxe','06-05-22','yes',10,'chennai','akash','SUV');
+insert into package_details values(2,'ultradeluxe','06-05-22','yes',10,'local','raj','TRUCK');
+insert into package_details values(3,'superdeluxe','06-05-22','yes',10,'remote','akhil','VAN');
+insert into package_details values(4,'ultradeluxe','06-05-22','yes',8,'local','anwar','TRUCK');
+insert into package_details values(5,'superdeluxe','06-05-22','yes',7,'remote','farook','VAN');
+select * from package_details
